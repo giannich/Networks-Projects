@@ -44,11 +44,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-// These are for image reading
-//import java.util.Base64;
-//import java.lang.Object;
-//import javax.imageio.ImageIO;
-//import java.awt.image.BufferedImage;
 
 public class HTTPServer {
 
@@ -137,22 +132,6 @@ public class HTTPServer {
             System.out.println("Ending Session");
             out.println(responseMessage);
             return 1;
-
-            /********************************
-            * WARNING: CODE GRAVEYARD BELOW *
-            ********************************/
-
-            //byte[] imageInByte;
-            //BufferedImage originalImage = ImageIO.read(new File("www/images/uchicago/logo.png"));
-            //ImageIO.write(originalImage, "png", dataOut);
-            
-            //File imageFile = new File("www/images/uchicago/logo.png");
-            //FileInputStream fileInputStreamReader = new FileInputStream(imageFile);
-            //byte[] bytes = new byte[(int)imageFile.length()];
-            //Path path = Paths.get("www/images/uchicago/logo.png");
-            //byte[] bytes = Files.readAllBytes(path);
-
-            //dataOut.write(bytes, 0, (int) imageFile.length());
 	    }
         catch (IOException e) 
         {
